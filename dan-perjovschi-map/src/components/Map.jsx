@@ -47,7 +47,7 @@ const Map = () => {
         mapStyle === DARK_STYLE
           ? "0 0 12px rgba(255,0,0,0.8)"
           : mapStyle === LIGHT_STYLE
-          ? "0 0 12px rgba(0,128,128,0.8)"  // teal-ish for Voyager
+          ? "0 0 12px rgba(0,128,128,0.8)"  
           : mapStyle === POSITRON_STYLE
           ? "0 0 12px rgba(0,128,0,0.8)"
           : "0 0 12px rgba(128,0,128,0.8)";
