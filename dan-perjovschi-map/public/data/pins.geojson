@@ -1,0 +1,804 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [26.1025, 44.4268]
+      },
+      "properties": {
+        "year": 2026,
+        "title": "Draft, Lia & Dan Perjovschi o retrospectiva comuna",
+        "venue": "ARCUB Bucuresti",
+        "city": "București",
+        "country": "RO",
+        "description": "Retrospectivă comună Lia & Dan Perjovschi.",
+        "images": ["images/2026-arcub-1.jpg"],
+        "links": [],
+        "tags": ["retrospective", "collaboration"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [21.2087, 45.7489]
+      },
+      "properties": {
+        "year": 2025,
+        "title": "Romania. O retrospectiva 1985-2025",
+        "venue": "Muzeul Tramvaielor Corneliu Mikloși",
+        "city": "Timișoara",
+        "country": "RO",
+        "description": "Un proiect Contrasens.",
+        "images": ["images/2025-timisoara-retrospective.jpg"],
+        "links": [],
+        "tags": ["retrospective"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.5062, 51.9356]
+      },
+      "properties": {
+        "year": 2025,
+        "title": "Just (about) now",
+        "venue": "BWA Gallery",
+        "city": "Zielona Góra",
+        "country": "PL",
+        "description": "Expoziție personală în Polonia.",
+        "images": ["images/2025-just-now.jpg"],
+        "links": [],
+        "tags": ["drawing"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [5.3221, 60.3913]
+      },
+      "properties": {
+        "year": 2025,
+        "title": "Wassily Chair Replicas Society",
+        "venue": "KRAFT Bergen",
+        "city": "Bergen",
+        "country": "NO",
+        "description": "Cu Andrea Galiazzo.",
+        "images": ["images/2025-wassily.jpg"],
+        "links": [],
+        "tags": ["collaboration", "installation"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [2.3522, 48.8566]
+      },
+      "properties": {
+        "year": 2025,
+        "title": "Dessinez-vous!",
+        "venue": "Festival Weekend a l'Est, Espace Visconti",
+        "city": "Paris",
+        "country": "FR",
+        "description": "Participare la 9'eme Festival Weekend a l'Est.",
+        "images": ["images/2025-dessinez.jpg"],
+        "links": [],
+        "tags": ["festival", "performance"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [24.1213, 45.7936]
+      },
+      "properties": {
+        "year": 2025,
+        "title": "Ecou Brâncuși (expoziție pop-up)",
+        "venue": "Centrul de cercetări socio-umane",
+        "city": "Sibiu",
+        "country": "RO",
+        "description": "Expoziție pop-up inspirată de Brâncuși.",
+        "images": ["images/2025-ecou-sibiu.jpg"],
+        "links": [],
+        "tags": ["Brancusi", "popup"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [21.432842, 42.003945] },
+      "properties": {
+        "year": 2024,
+        "title": "Lia Perjovschi Survival Kit & Dan Perjovschi ReNews",
+        "venue": "Contemporary Art Museum",
+        "city": "Skopje",
+        "country": "MK",
+        "description": "A joint exhibition reflecting on survival kits and news cycles through drawing and collage.",
+        "images": [],
+        "links": [],
+        "tags": ["retrospective", "drawing", "collage"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [10.5267, 52.2659] },
+      "properties": {
+        "year": 2024,
+        "title": "Lia Perjovschi Survival Kit & Dan Perjovschi Breaking (the) News",
+        "venue": "Montagehalle, HBK Braunschweig",
+        "city": "Braunschweig",
+        "country": "DE",
+        "description": "Exploring the mechanics of media and protest through minimal drawing and installation.",
+        "images": [],
+        "links": [],
+        "tags": ["media", "installation", "drawing"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [25.6012, 45.6551] },
+      "properties": {
+        "year": 2024,
+        "title": "Urgențe – Lia Perjovschi Kit de supraviețuire & Dan Perjovschi Press-stress",
+        "venue": "Muzeul de Artă Brașov",
+        "city": "Brașov",
+        "country": "RO",
+        "description": "An urgent, urgent exhibition responding to crises in political and personal realms through urgent drawing.",
+        "images": [],
+        "links": [],
+        "tags": ["politics", "urgent", "drawing"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [9.1900, 45.4669] },
+      "properties": {
+        "year": 2024,
+        "title": "Drawing Anarchy",
+        "venue": "Galeria Kaufmann Repetto",
+        "city": "Milan",
+        "country": "IT",
+        "description": "Confronting chaos and order through anarchic line drawings and political gesture.",
+        "images": [],
+        "links": [],
+        "tags": ["anarchy", "drawing"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [4.380, 50.850] },
+      "properties": {
+        "year": 2024,
+        "title": "Le miroir dans le miroir",
+        "venue": "Galerie Michel Rein",
+        "city": "Brussels",
+        "country": "BE",
+        "description": "A reflective, mirrored exhibition exploring repetition and reflection through minimalist drawing.",
+        "images": [],
+        "links": [],
+        "tags": ["conceptual", "reflection", "drawing"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-74.0060, 40.7128] },
+      "properties": {
+        "year": 2024,
+        "title": "Now & Then",
+        "venue": "Jane Lombard Gallery",
+        "city": "New York",
+        "country": "US",
+        "description": "A temporal dialogue bridging past and present drawing practices in an international context.",
+        "images": [],
+        "links": [],
+        "tags": ["temporal", "drawing"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [17.9431, 59.2197] },
+      "properties": {
+        "year": 2024,
+        "title": "Witnessing pre/post Revolution in Romania",
+        "venue": "Art Space, Södertörn University",
+        "city": "Stockholm",
+        "country": "SE",
+        "description": "Reflecting on Romanian revolutions and memory through collaborative drawing interventions.",
+        "images": [],
+        "links": [],
+        "tags": ["revolution", "memory", "drawing"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [21.8736, 45.3272] },
+      "properties": {
+        "year": 2024,
+        "title": "Ecou Brâncuși",
+        "venue": "Muzeul Banatului Montan",
+        "city": "Reșița",
+        "country": "RO",
+        "description": "An echo of Brâncuși’s forms rendered in drawing, performance and dialogue.",
+        "images": [],
+        "links": [],
+        "tags": ["Brancusi", "echo", "drawing"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [9.7320, 52.3759] },
+      "properties": {
+        "year": 2024,
+        "title": "Alright/wing? – Art against right-wing populism",
+        "venue": "Hannover Kunstverein",
+        "city": "Hannover",
+        "country": "DE",
+        "description": "A poster-driven protest series resisting populism and reclaiming public drawing.",
+        "images": [],
+        "links": [],
+        "tags": ["political", "poster", "drawing"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [24.5514, 46.5456] },
+      "properties": {
+        "year": 2024,
+        "title": "Muzeu / Múzeum / Museum",
+        "venue": "Muzeul Județean Mureș, Departamentul de Artă",
+        "city": "Târgu Mureș",
+        "country": "RO",
+        "description": "A trilingual exhibition contemplating the museum’s role across cultures and languages.",
+        "images": [],
+        "links": [],
+        "tags": ["museum", "identity", "drawing"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [23.7275, 37.9838] },
+      "properties": {
+        "year": 2023,
+        "title": "The Long Wall Report",
+        "venue": "EMST, Museum of Contemporary Art",
+        "city": "Athens",
+        "country": "GR",
+        "description": "Critical narratives drawn around walls—metaphorical and physical—in a contemporary context.",
+        "images": [],
+        "links": [],
+        "tags": ["drawing", "architecture", "politics"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [11.3935, 47.2692] },
+      "properties": {
+        "year": 2023,
+        "title": "Fragments of Humanity",
+        "venue": "Kunstraum Innsbruck",
+        "city": "Innsbruck",
+        "country": "AU",
+        "description": "Exploring facets of humanity through fragmented drawing and narrative.",
+        "images": [],
+        "links": [],
+        "tags": ["humanity", "fragments", "drawing"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [23.5885, 46.7712] },
+      "properties": {
+        "year": 2023,
+        "title": "No Joke (cu Lia Perjovschi)",
+        "venue": "White Cuib",
+        "city": "Cluj",
+        "country": "RO",
+        "description": "A wry, understated series of drawings confronting serious themes with a light touch.",
+        "images": [],
+        "links": [],
+        "tags": ["humor", "drawing"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [26.3600, 46.2380] },
+        "properties": {
+          "year": 2023,
+          "title": "Desen de intrare (volumul 2)",
+          "venue": "Teatrul Tineretului, Piatra Neamț",
+          "city": "Piatra Neamț",
+          "country": "RO",
+          "description": "Part of a festival series inviting public participation through drawing at the theater entrance.",
+          "images": [],
+          "links": [],
+          "tags": ["performance", "drawing"]
+        }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [26.1025, 44.4268] },
+      "properties": {
+        "year": 2023,
+        "title": "București cu puțină eleganță (cu Andrei Pandele)",
+        "venue": "Galateca",
+        "city": "București",
+        "country": "RO",
+        "description": "Elegantly drawn commentary on urban life and sophistication in the capital.",
+        "images": [],
+        "links": [],
+        "tags": ["urban", "drawing", "elegance"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [24.1520, 45.7945] },
+      "properties": {
+        "year": 2023,
+        "title": "Document",
+        "venue": "Astra Film Sibiu",
+        "city": "Sibiu",
+        "country": "RO",
+        "description": "A drawing-based examination of documentary practices, trace, and archive.",
+        "images": [],
+        "links": [],
+        "tags": ["drawing", "archive", "documentary"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [25.6020, 45.6480] },
+        "properties": {
+          "year": 2023,
+          "title": "Brâncuși după / peste / fără Brâncuși",
+          "venue": "Centrul Multicultural al Universității Transilvania",
+          "city": "Brașov",
+          "country": "RO",
+          "description": "A layered conversation with Brâncuși—after, beyond, without—expressed in drawing.",
+          "images": [],
+          "links": [],
+          "tags": ["Brancusi", "drawing", "reflection"]
+        }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [26.1025, 44.4268] },
+      "properties": {
+        "year": 2022,
+        "title": "PUBLICations 1990–2022",
+        "venue": "Galeria Posibilă",
+        "city": "București",
+        "country": "RO",
+        "description": "A comprehensive overview of 30 years of publications, zines, and printed experiments.",
+        "images": [],
+        "links": [],
+        "tags": ["publishing", "archive", "retrospective"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [23.5885, 46.7712] },
+      "properties": {
+        "year": 2022,
+        "title": "Lia & Dan Perjovschi: Ongoing",
+        "venue": "tranzit.ro",
+        "city": "Cluj",
+        "country": "RO",
+        "description": "An ongoing collaborative practice presented in Cluj’s tranzit.ro space.",
+        "images": [],
+        "links": [],
+        "tags": ["collaboration", "drawing", "ongoing"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [21.2290, 45.7489] },
+      "properties": {
+        "year": 2022,
+        "title": "Activități",
+        "venue": "Indecis & The Secret Garden",
+        "city": "Timișoara",
+        "country": "RO",
+        "description": "Community-centered projects and artistic interventions in alternative spaces.",
+        "images": [],
+        "links": [],
+        "tags": ["community", "alternative", "drawing"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [25.1442, 35.3387] },
+      "properties": {
+        "year": 2022,
+        "title": "Eirini Linardaki & Dan Perjovschi: A Public Exhibition",
+        "venue": "Heraklion",
+        "city": "Crete",
+        "country": "GR",
+        "description": "A collaborative public art project engaging directly with the city of Heraklion.",
+        "images": [],
+        "links": [],
+        "tags": ["public art", "collaboration", "drawing"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [4.3830, 50.8355] },
+      "properties": {
+        "year": 2022,
+        "title": "Room drawing (When Walls Talk)",
+        "venue": "House of European History",
+        "city": "Brussels",
+        "country": "BE",
+        "description": "Large-scale wall drawings within a European context, part of 'When Walls Talk'.",
+        "images": [],
+        "links": [],
+        "tags": ["institutional", "walls", "drawing"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [6.0839, 50.7753] },
+      "properties": {
+        "year": 2021,
+        "title": "Drawing the World",
+        "venue": "Ludwig Forum for International Art & Charlemagne Centre",
+        "city": "Aachen",
+        "country": "DE",
+        "description": "Global cartographies reimagined through drawing at two institutions in Aachen.",
+        "images": [],
+        "links": [],
+        "tags": ["cartography", "global", "drawing"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [26.3600, 46.9400] },
+      "properties": {
+        "year": 2021,
+        "title": "Desen de intrare",
+        "venue": "Teatrul Tineretului (Festivalul Internațional de Teatru)",
+        "city": "Piatra Neamț",
+        "country": "RO",
+        "description": "A public participatory drawing at the entrance of the theater festival.",
+        "images": [],
+        "links": [],
+        "tags": ["performance", "festival", "drawing"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [13.0657, 52.3906] },
+      "properties": {
+        "year": 2021,
+        "title": "Draw it, Use it, Switch It",
+        "venue": "Das Minsk Kunsthaus (future museum site)",
+        "city": "Potsdam",
+        "country": "DE",
+        "description": "A site-specific drawing intervention on the construction site of Das Minsk Kunsthaus.",
+        "images": [],
+        "links": [],
+        "tags": ["site-specific", "intervention", "drawing"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [8.2415, 50.0826] },
+      "properties": {
+        "year": 2021,
+        "title": "AntiOscar",
+        "venue": "goEast Film Festival, Museum Wiesbaden",
+        "city": "Wiesbaden",
+        "country": "DE",
+        "description": "A satirical project engaging with cinema, awards, and counter-narratives.",
+        "images": [],
+        "links": [],
+        "tags": ["cinema", "satire", "drawing"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [26.1025, 44.4268] },
+      "properties": {
+        "year": 2021,
+        "title": "Chalk Reality. Artă, Politică, Educație (Beuys 100)",
+        "venue": "Goethe-Institut",
+        "city": "București",
+        "country": "RO",
+        "description": "A one-day pop-up chalk performance linking art, politics, and education in honor of Beuys.",
+        "images": [],
+        "links": [],
+        "tags": ["performance", "Beuys100", "drawing"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [8.2146, 53.1435] },
+      "properties": {
+        "year": 2020,
+        "title": "Drawing your Attention",
+        "venue": "Horst Janssen Museum",
+        "city": "Oldenburg",
+        "country": "DE",
+        "description": "Exhibition highlighting Perjovschi’s incisive graphic language in the context of Janssen’s legacy.",
+        "tags": ["museum", "drawing", "Germany"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-74.0721, 4.7110] },
+      "properties": {
+        "year": 2020,
+        "title": "Volver at Futuro",
+        "venue": "Instituto de Visión",
+        "city": "Bogotá",
+        "country": "CO",
+        "description": "A collaborative project with Joe Broderick in Bogotá, engaging with social futures and memory.",
+        "tags": ["collaboration", "Latin America", "drawing"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-74.0060, 40.7128] },
+      "properties": {
+        "year": 2020,
+        "title": "The Nightmare It Is / The Nightmare It Was",
+        "venue": "Jane Lombard Gallery",
+        "city": "New York",
+        "country": "US",
+        "description": "Darkly humorous reflections on global crises presented in New York.",
+        "tags": ["gallery", "crisis", "drawing"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [15.9819, 45.8150] },
+      "properties": {
+        "year": 2020,
+        "title": "Don’t Trace. Draw!",
+        "venue": "whw",
+        "city": "Zagreb",
+        "country": "HR",
+        "description": "Collaborative exhibition with Ana Hušman & Dubravka, exploring drawing as resistance.",
+        "tags": ["collaboration", "resistance", "drawing"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [26.4333, 46.2167] },
+      "properties": {
+        "year": 2020,
+        "title": "Dan Perjovschi în Context",
+        "venue": "Centrala Artelor",
+        "city": "Slănic Moldova",
+        "country": "RO",
+        "description": "A contextual intervention in Slănic Moldova focusing on the local cultural environment.",
+        "tags": ["Romania", "contextual", "drawing"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [26.1025, 44.4268] },
+      "properties": {
+        "year": 2020,
+        "title": "Mobile Drawing",
+        "venue": "Another Mobile Gallery",
+        "city": "București",
+        "country": "RO",
+        "description": "Nomadic exhibition format experimenting with mobility and accessibility in art.",
+        "tags": ["mobile", "alternative", "drawing"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [26.1025, 44.4268] },
+      "properties": {
+        "year": 2020,
+        "title": "Oricine ai fi te voi salva / AntiSafari",
+        "venue": "Goethe-Institut",
+        "city": "București",
+        "country": "RO",
+        "description": "Pandemic-driven exhibition and protest-performance against the Safari exhibition model.",
+        "tags": ["pandemic", "performance", "protest"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [27.5904, 47.1585] },
+      "properties": {
+        "year": 2020,
+        "title": "“Scoală-te”",
+        "venue": "Galeria Borderline",
+        "city": "Iași",
+        "country": "RO",
+        "description": "Exhibition confronting social awakening and protest culture in Romania.",
+        "tags": ["Romania", "gallery", "protest"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [18.4233, -33.9189] },
+      "properties": {
+        "year": 2019,
+        "title": "The Black and White (with Many Nuances) Cape Town Report",
+        "venue": "A4 Arts Foundation",
+        "city": "Cape Town",
+        "country": "SA",
+        "description": "Report-like wall drawing engaging with South African context and global inequalities.",
+        "tags": ["report", "South Africa", "drawing"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [4.3517, 50.8503] },
+      "properties": {
+        "year": 2019,
+        "title": "New(s) Drawings",
+        "venue": "Galerie Michel Rein",
+        "city": "Bruxelles",
+        "country": "BE",
+        "description": "A Brussels gallery show of recent drawings dealing with news media.",
+        "tags": ["news", "gallery", "drawing"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [4.3486, 50.8467] },
+      "properties": {
+        "year": 2019,
+        "title": "Transparent Drawing (Europalia-România)",
+        "venue": "Muntpunt",
+        "city": "Bruxelles",
+        "country": "BE",
+        "description": "Part of Europalia Romania festival, exploring transparency and fragility in drawing.",
+        "tags": ["festival", "Romania", "drawing"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.3522, 48.8566] },
+      "properties": {
+        "year": 2018,
+        "title": "Le mur après le mur après le mur",
+        "venue": "Galerie Michel Rein",
+        "city": "Paris",
+        "country": "FR",
+        "description": "Wall drawing project reflecting on post-1989 walls and contemporary barriers.",
+        "tags": ["wall drawing", "Paris", "politics"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-74.0060, 40.7128] },
+      "properties": {
+        "year": 2018,
+        "title": "Time of Monsters",
+        "venue": "Jane Lombard Gallery",
+        "city": "New York",
+        "country": "US",
+        "description": "Exhibition engaging with political crises and contradictions of the modern age.",
+        "tags": ["gallery", "monsters", "politics"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [27.1783, 45.6966] },
+      "properties": {
+        "year": 2018,
+        "title": "Camera 307. In memoria Alexandru Grosu",
+        "venue": "Galeriile UAP",
+        "city": "Focșani",
+        "country": "RO",
+        "description": "A commemorative exhibition in memory of Alexandru Grosu, with Liviu Nedelcu.",
+        "tags": ["Romania", "memory", "collaboration"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [7.4653, 51.5136] },
+      "properties": {
+        "year": 2018,
+        "title": "The Hard Drawing 2",
+        "venue": "Hartware MedienKunstVerein",
+        "city": "Dortmund",
+        "country": "DE",
+        "description": "An experimental drawing-based exhibition within a media art institution.",
+        "tags": ["Germany", "drawing", "media art"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [26.1025, 44.4268] },
+      "properties": {
+        "year": 2018,
+        "title": "Reverse donation",
+        "venue": "Salonul de Proiecte",
+        "city": "București",
+        "country": "RO",
+        "description": "Pop-up display and performance exploring the notion of reverse donation in art.",
+        "tags": ["performance", "Romania", "conceptual"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [26.1025, 44.4268] },
+      "properties": {
+        "year": 2017,
+        "title": "World Attractions",
+        "venue": "Sandwich II",
+        "city": "București",
+        "country": "RO",
+        "description": "Playful exhibition at Sandwich II, engaging with global attractions and absurdities.",
+        "tags": ["Romania", "gallery", "humor"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [26.1025, 44.4268] },
+      "properties": {
+        "year": 2017,
+        "title": "Breaking the News & UFOtopia",
+        "venue": "Salonul de Proiecte",
+        "city": "București",
+        "country": "RO",
+        "description": "Joint exhibition with Cristian Răduță, exploring the intersection of news and speculative utopias.",
+        "tags": ["news", "Romania", "collaboration"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [13.4049, 52.5200] },
+      "properties": {
+        "year": 2017,
+        "title": "Drawing Politics",
+        "venue": "Reinbeckhallen",
+        "city": "Berlin",
+        "country": "DE",
+        "description": "Exhibition addressing the visual language of politics through drawing interventions.",
+        "tags": ["Berlin", "politics", "drawing"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-0.3763, 39.4699] },
+      "properties": {
+        "year": 2017,
+        "title": "Bits and Fragments",
+        "venue": "Espaivisor",
+        "city": "Valencia",
+        "country": "ES",
+        "description": "Exhibition with Lia Perjovschi exploring fragments of memory and narrative.",
+        "tags": ["Spain", "collaboration", "memory"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [9.4797, 47.6543] },
+      "properties": {
+        "year": 2017,
+        "title": "News Uncut",
+        "venue": "White Box, Zeppelin University",
+        "city": "Friedrichshafen",
+        "country": "DE",
+        "description": "University exhibition dealing with unfiltered news and media critique.",
+        "tags": ["university", "media", "Germany"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [10.1356, 54.3233] },
+      "properties": {
+        "year": 2017,
+        "title": "I Kiel you",
+        "venue": "Kunsthalle Kiel",
+        "city": "Kiel",
+        "country": "DE",
+        "description": "Wall-drawing & workshop with students and public engagement in Kiel.",
+        "tags": ["Germany", "workshop", "drawing"]
+      }
+    }
+  ]
+}
