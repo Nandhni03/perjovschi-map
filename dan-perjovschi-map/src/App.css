@@ -25,3 +25,17 @@ html, body, #root {
   height: 100%; /* important! */
   min-width: 100%; /* ensure width is not 0 */
 }
+
+.maplibregl-popup-content {
+  color: black !important;       /* make sure text is visible */
+  font-size: 16px !important;    /* increase readability */
+  line-height: 1.4;
+  background: white !important;  /* ensure good contrast */
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.maplibregl-popup-tip {
+  border-top-color: white !important; /* match background */
+}
+
