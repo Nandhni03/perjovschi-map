@@ -1,0 +1,91 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 350px;
+  max-width: 90%;
+  height: 100%;
+  background: var(--sidebar-bg, rgba(255, 255, 255, 0.95));
+  color: var(--sidebar-text, #111);
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+  transition: right 0.3s ease-in-out;
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(8px);
+}
+
+.open {
+  right: 0 !important; /* force open even on mobile */
+}
+
+.content {
+  padding: 20px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.placeholder {
+  font-style: italic;
+  color: #666;
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* Mobile full-screen */
+@media (max-width: 600px) {
+  .sidebar {
+    width: 100%;
+    max-width: 100%;
+    top: 0;
+    height: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    backdrop-filter: blur(6px);
+  }
+
+  .overlay {
+    display: block; /* overlay always exists */
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  z-index: 1500;
+}
+
+.overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Dark mode */
+:global(body.dark-mode) .sidebar {
+  --sidebar-bg: rgba(34, 34, 34, 0.95);
+  --sidebar-text: #eee;
+}
+
+/* Project cards */
+.projectCard {
+  padding: 10px;
+  margin: 8px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.projectCard:hover {
+  background: rgba(0,0,0,0.05);
+}
+
+:global(body.dark-mode) .projectCard:hover {
+  background: rgba(255,255,255,0.1);
+}

@@ -8,7 +8,7 @@ const DARK_STYLE =
 const LIGHT_STYLE =
   "https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json";
 
-const Map = () => {
+const Map = ({ onOpenSidebar }) => {
   const mapContainer = useRef(null);
   const mapRef = useRef(null);
   const geojsonRef = useRef(null);
@@ -86,14 +86,48 @@ const Map = () => {
       const mostRecent = propertiesList[0];
       const olderCount = propertiesList.length - 1;
 
-      let popupContent = `<h3>${mostRecent.title}</h3>
-                          <p>${mostRecent.description}</p>
-                          <small>${mostRecent.year.join(", ")}, ${mostRecent.city}, ${mostRecent.country}</small>`;
+      // Wrap the title in a link that opens the sidebar
+      let popupContent = `
+        <h3 style="margin:0 0 6px;">
+          <a href="#" class="js-open-sidebar" style="text-decoration:none;">
+            ${mostRecent.title}
+          </a>
+        </h3>
+        <p style="margin:4px 0;">${mostRecent.description ?? ""}</p>
+        <small>
+          ${(Array.isArray(mostRecent.year) ? mostRecent.year.join(", ") : mostRecent.year) || ""}
+          ${mostRecent.city ? `, ${mostRecent.city}` : ""}
+          ${mostRecent.country ? `, ${mostRecent.country}` : ""}
+        </small>
+      `;
       if (olderCount > 0) {
         popupContent += `<p style="margin-top:8px; font-style:italic;">+${olderCount} more older project${olderCount > 1 ? "s" : ""}</p>`;
       }
 
       const popup = new maplibregl.Popup({ offset: 25 }).setHTML(popupContent);
+
+      // When popup opens, wire the title click → open sidebar
+      popup.on("open", () => {
+        const root = popup.getElement();
+        const titleLink = root?.querySelector(".js-open-sidebar");
+        if (titleLink) {
+          titleLink.addEventListener(
+            "click",
+            (e) => {
+              e.preventDefault();
+              if (onOpenSidebar) {
+                onOpenSidebar({
+                  city: mostRecent.city || "",
+                  coord: [lng, lat],
+                  projects: propertiesList,
+                });
+              }
+              popup.remove(); // close popup after opening sidebar
+            },
+            { once: true }
+          );
+        }
+      });
 
       const marker = new maplibregl.Marker(el)
         .setLngLat([lng, lat])
@@ -128,11 +162,11 @@ const Map = () => {
         })
         .catch((err) => console.error("Error loading pins.geojson:", err));
     });
-  }, []);
+  }, []); // eslint-disable-line
 
   return (
     <div style={{ height: "100%", width: "100%", position: "relative" }}>
-      {/* Style toggle */}
+      {/* Style toggle (kept as you had it) */}
       <div className="style-toggle">
         <button
           className={mapStyle === DARK_STYLE ? "active" : ""}
