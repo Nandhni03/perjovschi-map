@@ -1,5 +1,6 @@
 import Map from "./components/Map";
 import "./App.css";
+import "maplibre-gl/dist/maplibre-gl.css";
 
 function App() {
   return (

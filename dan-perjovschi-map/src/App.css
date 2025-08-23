@@ -1,8 +1,9 @@
-/* App.css */
 html, body, #root {
   height: 100%;
   width: 100%;
   margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 #root {
@@ -22,20 +23,147 @@ html, body, #root {
 .map-container {
   flex: 1;
   width: 100%;
-  height: 100%; /* important! */
-  min-width: 100%; /* ensure width is not 0 */
+  height: 100%; /* important */
+  min-width: 100%; /* prevent shrinking */
 }
 
+/* Popup base styles */
 .maplibregl-popup-content {
-  color: red !important;       /* make sure text is visible */
-  font-size: 16px !important;    /* increase readability */
-  line-height: 1.4;
-  background: white !important;  /* ensure good contrast */
-  padding: 8px 12px;
-  border-radius: 6px;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+  max-width: 260px;
+  word-wrap: break-word;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
+/* Headings inside popup */
+.maplibregl-popup-content h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.maplibregl-popup-content p {
+  margin: 4px 0;
+}
+
+.maplibregl-popup-content small {
+  display: block;
+  margin-top: 6px;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+/* Default popup close button (light mode) */
+.maplibregl-popup-close-button {
+  color: #111 !important;
+  font-size: 18px;
+  padding: 4px 8px;
+  transition: color 0.2s ease;
+}
+
+/* Dark theme override for close button */
+body.dark-mode .maplibregl-popup-close-button {
+  color: #f0f0f0 !important;
+}
+body.dark-mode .maplibregl-popup-close-button:hover {
+  color: #ff6666 !important; /* subtle hover highlight */
+}
+
+/* Default = Light background */
+.maplibregl-popup-content {
+  background: #fafafa !important;
+  color: #111 !important;
+}
 .maplibregl-popup-tip {
-  border-top-color: white !important; /* match background */
+  border-top-color: #fafafa !important;
 }
 
+/* Dark theme override */
+body.dark-mode .maplibregl-popup-content {
+  background: #1c1c1c !important;
+  color: #f0f0f0 !important;
+  border-color: rgba(255,255,255,0.08);
+}
+body.dark-mode .maplibregl-popup-tip {
+  border-top-color: #1c1c1c !important;
+}
+
+/* Toggle button container */
+.style-toggle {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: flex;
+  gap: 6px;
+  padding: 6px;
+  border-radius: 6px;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.6); /* container bg */
+}
+
+/* Base button style */
+.style-toggle button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #444;
+  color: #fff; /* default text = white */
+}
+
+/* Active button styles (highlight current theme) */
+.style-toggle button.active {
+  background-color: #fff;
+  color: #000; /* active text always black */
+}
+
+/* Dark mode override for toggle container & inactive buttons */
+body.dark-mode .style-toggle {
+  background-color: rgba(255,255,255,0.1); /* lighter overlay in dark mode */
+}
+
+/* Light mode buttons */
+body:not(.dark-mode) .style-toggle button {
+  background: #f7f7f7;
+  color: #222;
+}
+body:not(.dark-mode) .style-toggle button:hover {
+  background: #e5e5e5;
+}
+
+/* Dark mode buttons */
+body.dark-mode .style-toggle button {
+  background: #333;
+  color: #eee;
+}
+body.dark-mode .style-toggle button:hover {
+  background: #444;
+}
+
+/* Active button highlight (refined for light & dark mode) */
+body:not(.dark-mode) .style-toggle button.active {
+  background: #4a90e2; /* professional blue highlight */
+  color: #fff !important; /* text white on blue highlight */
+}
+
+body.dark-mode .style-toggle button.active {
+  background: #4a90e2; /* same blue highlight in dark mode */
+  color: #fff !important; /* text white on blue highlight */
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .maplibregl-popup-content {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 90vw;
+  }
+}

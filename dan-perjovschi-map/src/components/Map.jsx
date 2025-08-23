@@ -1,23 +1,54 @@
 import { useLayoutEffect, useRef, useState } from "react";
 import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
+import "../App.css";
 
-const DARK_STYLE = "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json";
-const POSITRON_STYLE = "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json";
-const LIGHT_STYLE = "https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json";
+const DARK_STYLE =
+  "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json";
+const LIGHT_STYLE =
+  "https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json";
 
 const Map = () => {
   const mapContainer = useRef(null);
   const mapRef = useRef(null);
   const geojsonRef = useRef(null);
-  const markersRef = useRef([]); // to store current markers
+  const markersRef = useRef([]); // store current markers
   const [mapStyle, setMapStyle] = useState(DARK_STYLE);
+  const activePopupRef = useRef(null); // track currently open popup
 
   const handleStyleChange = (style) => {
+    if (!mapRef.current) return;
+
+    // If a popup is open, save its state
+    const popupData = activePopupRef.current
+      ? {
+          lngLat: activePopupRef.current._lngLat,
+          html: activePopupRef.current._content.innerHTML,
+        }
+      : null;
+
     setMapStyle(style);
-    if (mapRef.current) {
-      mapRef.current.setStyle(style);
-      mapRef.current.once("styledata", () => addMarkers());
+    mapRef.current.setStyle(style);
+
+    mapRef.current.once("styledata", () => {
+      addMarkers();
+
+      // Restore popup if it was open
+      if (popupData) {
+        const restoredPopup = new maplibregl.Popup({ offset: 25 })
+          .setLngLat(popupData.lngLat)
+          .setHTML(popupData.html)
+          .addTo(mapRef.current);
+
+        activePopupRef.current = restoredPopup;
+      }
+    });
+
+    // Toggle body class for global CSS theming
+    if (style.includes("dark-matter")) {
+      document.body.classList.add("dark-mode");
+    } else {
+      document.body.classList.remove("dark-mode");
     }
   };
 
@@ -47,9 +78,8 @@ const Map = () => {
         mapStyle === DARK_STYLE
           ? "0 0 12px rgba(255,0,0,0.8)"
           : mapStyle === LIGHT_STYLE
-          ? "0 0 12px rgba(0,128,128,0.8)"  
-          : "0 0 12px rgba(128,0,128,0.8)";
-
+          ? "0 0 12px rgba(0,128,128,0.8)"
+          : "0 0 12px rgba(128,0,0,0.8)";
 
       // Sort projects by year descending
       propertiesList.sort((a, b) => b.year[0] - a.year[0]);
@@ -63,10 +93,17 @@ const Map = () => {
         popupContent += `<p style="margin-top:8px; font-style:italic;">+${olderCount} more older project${olderCount > 1 ? "s" : ""}</p>`;
       }
 
+      const popup = new maplibregl.Popup({ offset: 25 }).setHTML(popupContent);
+
       const marker = new maplibregl.Marker(el)
         .setLngLat([lng, lat])
-        .setPopup(new maplibregl.Popup({ offset: 25 }).setHTML(popupContent))
+        .setPopup(popup)
         .addTo(mapRef.current);
+
+      // Track the popup when opened
+      marker.getElement().addEventListener("click", () => {
+        activePopupRef.current = popup;
+      });
 
       markersRef.current.push(marker);
     });
@@ -95,41 +132,24 @@ const Map = () => {
 
   return (
     <div style={{ height: "100%", width: "100%", position: "relative" }}>
-      <div
-        style={{
-          position: "absolute",
-          top: "12px",
-          left: "12px",
-          backgroundColor: "rgba(0,0,0,0.6)",
-          padding: "6px",
-          borderRadius: "6px",
-          display: "flex",
-          gap: "4px",
-          zIndex: 10,
-        }}
-      >
-        <button style={buttonStyle(mapStyle === DARK_STYLE)} onClick={() => handleStyleChange(DARK_STYLE)}>
-          dark
+      {/* Style toggle */}
+      <div className="style-toggle">
+        <button
+          className={mapStyle === DARK_STYLE ? "active" : ""}
+          onClick={() => handleStyleChange(DARK_STYLE)}
+        >
+          Dark
         </button>
-        <button style={buttonStyle(mapStyle === LIGHT_STYLE)} onClick={() => handleStyleChange(LIGHT_STYLE)}>
-          light
+        <button
+          className={mapStyle === LIGHT_STYLE ? "active" : ""}
+          onClick={() => handleStyleChange(LIGHT_STYLE)}
+        >
+          Light
         </button>
       </div>
       <div ref={mapContainer} className="map-container" />
     </div>
   );
 };
-
-const buttonStyle = (active) => ({
-  padding: "4px 8px",
-  border: "none",
-  borderRadius: "4px",
-  backgroundColor: active ? "#fff" : "#444",
-  color: active ? "#000" : "#fff",
-  cursor: "pointer",
-  fontWeight: active ? "600" : "400",
-  fontSize: "12px",
-  transition: "0.3s",
-});
 
 export default Map;
